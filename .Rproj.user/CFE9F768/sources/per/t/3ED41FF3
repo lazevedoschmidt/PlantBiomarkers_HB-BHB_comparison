@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1626388760494.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1589056751",
+    "id" : "3ED41FF3",
+    "lastKnownWriteTime" : 1625089505,
+    "last_content_update" : 1625089505,
+    "path" : "~/Dropbox/Hanna Basin 2016 (1)/Geochemistry data/R-Code/PlantBiomarkers_HB-BHB_comparison/dD_C29.R",
+    "project_path" : "dD_C29.R",
+    "properties" : {
+        "cursorPosition" : "60,18",
+        "scrollLine" : "49"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

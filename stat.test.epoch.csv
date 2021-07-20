@@ -1,0 +1,4 @@
+Epoch,.y.,group1,group2,p,p.adj,p.format,p.signif,method
+Eocene,TOC,Bighorn Basin,Hanna Basin,0.7921928631737479,0.85,0.7922,ns,T-test
+PETM,TOC,Bighorn Basin,Hanna Basin,0.4253595266378224,0.85,0.4254,ns,T-test
+Paleocene,TOC,Bighorn Basin,Hanna Basin,0.005795387587876044,0.017,0.0058,**,T-test

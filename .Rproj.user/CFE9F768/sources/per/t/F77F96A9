@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1625075565377.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3204522331",
+    "id" : "F77F96A9",
+    "lastKnownWriteTime" : 1608141767,
+    "last_content_update" : 1608141767,
+    "path" : "~/Dropbox/Hanna Basin 2016 (1)/Geochemistry data/R-Code/PlantBiomarkers_HB-BHB_comparison/color_palettes.R",
+    "project_path" : "color_palettes.R",
+    "properties" : {
+        "cursorPosition" : "44,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

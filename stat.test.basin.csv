@@ -1,0 +1,7 @@
+Basin,.y.,group1,group2,p,p.adj,p.format,p.signif,method
+Bighorn Basin,TOC,Paleocene,PETM,8.837022784945702e-6,4.4e-5,8.8e-06,****,T-test
+Bighorn Basin,TOC,Paleocene,Eocene,0.024380767875479166,0.049,0.02438,*,T-test
+Bighorn Basin,TOC,PETM,Eocene,0.007414877930943323,0.022,0.00741,**,T-test
+Hanna Basin,TOC,Paleocene,PETM,7.632456598655126e-4,0.0031,0.00076,***,T-test
+Hanna Basin,TOC,Paleocene,Eocene,0.3704748368044216,0.37,0.37047,ns,T-test
+Hanna Basin,TOC,PETM,Eocene,8.274061774039722e-10,5e-9,8.3e-10,****,T-test

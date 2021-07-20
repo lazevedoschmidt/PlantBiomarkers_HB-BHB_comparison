@@ -1,0 +1,70 @@
+#Lauren Azevedo Schmidt
+#Purpose: TOC data of HB and BHB based on lithology
+#date: 07.30.2020
+#R: 3.6.1
+##############################################################################
+library(ggplot2)
+library(hrbrthemes)
+library(tidyverse)
+library(ggalluvial)
+library(viridis)
+library(colorRamps)
+library(RColorBrewer)
+library(wesanderson)
+library(agricolae)
+library(egg)
+
+#load data file
+TOC_data <- read.csv("TOC data_updated.csv", header=T, sep=",", 
+                     na.strings=  "NA", dec=".", strip.white=TRUE)
+TOC_data<- subset(TOC_data,Epoch!="?") #subsetting the data so that any Epoch that is 
+#unknown or denoted by a "?", is deleted from the data
+TOC_data$Sample.ID <- NULL #removing sample ID column
+#cleaning dataframes
+TOC_data<- TOC_data %>%
+  rename(TOC = Wt....TOC)
+
+#Ordering legend properly
+TOC_data$Epoch <- factor(TOC_data$Epoch, levels = c("Paleocene", "PETM", "Eocene"))
+
+#Reordering lithology so we can alter colors later on
+TOC_data$Lithology <- factor(TOC_data$Lithology,
+                             levels = c("claystone", "carbonaceous facies",
+                                        "siltstone", "sandstone"))
+
+
+lith <- TOC_data %>%
+  group_by(Basin,Epoch,Lithology)%>%
+  summarise(mean=mean(TOC),
+            sd.value = sd(TOC), 
+            count = n(),
+            se.mean = sd.value/sqrt(count)) 
+
+
+#Bar graph by time, lithology and basin----
+Lith.TOC <-ggplot(lith, aes(fill=Lithology, y=mean, x=Basin)) +
+  geom_errorbar(aes(ymin = 0, ymax = mean + sd.value), 
+                width=0.1,
+                position = position_dodge(0.9),
+                alpha=0.3, size=.5)+
+  geom_bar(position="dodge",stat="identity") +
+  geom_text(label= c(26,23,5,2,6,20,5,42,NA,16,NA,NA,63,10,25,35,24,15,NA,NA,
+                     66,65,19,58), 
+            position=position_dodge(width=0.9),
+            vjust=-0.5, 
+            size=3)+
+  facet_wrap(~Epoch, drop=FALSE) +
+  scale_fill_manual(values=updatedcolors, drop=FALSE) +
+  scale_x_discrete(drop=FALSE)+
+  ggtitle("Total Organic Carbon by Lithology") +
+  xlab("")+
+  ylab("Total Organic Carbon (TOC)\n(mean)")+
+  theme_light()+
+  theme(legend.position="bottom",plot.title = element_text(hjust = 0.5), 
+        legend.title = element_blank()) +
+  guides(fill=guide_legend(nrow=1))
+Lith.TOC
+
+
+#Save figure----
+ggsave("Figures/TOC.Lithology.pdf", Lith.TOC)  
