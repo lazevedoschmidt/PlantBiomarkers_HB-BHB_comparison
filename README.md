@@ -8,7 +8,7 @@ Affiliations: \
 <sup>4</sup>U.S. Geological Survey, Geosciences and Environmental Change Science Center, Box 25046, MS 980, Denver, CO 80225, USA \
 <sup>5</sup>Natural History Museums of Los Angeles County, La Brea Tar Pits & Museum, Los Angeles, California 90036, USA \
 <sup>6</sup>Department of Geosciences University of Arkansas, Fayetteville, Arkansas 72701, USA \
-<sup>7</sup>Department of Geology and Geophysics, University of Wyoming, Laramie, Wyoming, USA 82071 \
+<sup>7</sup>Department of Geology and Geophysics, University of Wyoming, Laramie, Wyoming, USA 82071
 
 Keywords: PETM, Plant-insect interactions, Paleobotany, Organic Geochemistry, Plant biomarkers, Paleohydrology
 
