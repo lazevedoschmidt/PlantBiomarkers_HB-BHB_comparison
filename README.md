@@ -10,3 +10,5 @@ Affiliations: 1Department of Botany and Program in Ecology, University of Wyomin
 7Department of Geology and Geophysics, University of Wyoming, Laramie, Wyoming, USA 82071
 
 Keywords: PETM, Plant-insect interactions, Paleobotany, Organic Geochemistry, Plant biomarkers, Paleohydrology
+
+The authors request that any data or code used from this publication be properly cited and recognized in future work. 
